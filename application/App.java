@@ -12,7 +12,7 @@ public class App {
 
     Scanner sc = new Scanner(System.in);
         
-        int count = 1;
+        int l,c, count = 1;
         String M[][] = new String[3][3];
         
         System.out.println();
@@ -33,8 +33,6 @@ public class App {
                         if(M[i][j].equals("_")) count++;
                     }
                 }
-                                
-                int l,c;
                 
                 System.out.println("\nTurno " + jdv.getTurno());
                 System.out.println("Esperando " + jdv.getJogadorAtual() + ":");
@@ -76,7 +74,7 @@ public class App {
             
         }
         if(count==0) System.out.println("\nVelha!!\n");
-        if(jdv.corteVitoria(M)) System.out.println("\n" + jdv.getJogadorAtual() + " venceu!\n");
+        if(jdv.corteVitoria(M)) System.out.println(jdv.getJogadorAtual() + " venceu!\n");
         sc.close();
     }
     
