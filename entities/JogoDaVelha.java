@@ -19,15 +19,9 @@ public class JogoDaVelha {
         return jogadorAtual;
     }
 
-
-
     public void nextTurno() {
 		turno++; 
 		jogadorAtual = (jogadorAtual == Jogador.Jogador_1) ? Jogador.Jogador_2 : Jogador.Jogador_1;
-	}
-
-    public Jogador opponent(Jogador jogador) {
-		return (jogador == Jogador.Jogador_1) ? Jogador.Jogador_2 : Jogador.Jogador_1;
 	}
 
     public boolean corteVitoria(String M[][]){
